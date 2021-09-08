@@ -1,0 +1,16 @@
+@charset "utf-8";
+html{
+    font-size: 16px;
+}
+body{
+    font-family: 'Sawarabi Mincho', sans-serif;
+
+}
+h3,p{
+font-family: 'Sawarabi Gothic', sans-serif;
+color: brown;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
