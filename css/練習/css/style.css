@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.display-inline{
+    display: inline;
+}
+.display-inline-block{
+    display: inline-block;
+}
+p{
+
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border:dashed red;
+    margin: 5%;
+}
