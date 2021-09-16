@@ -5,38 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <title>プロフィール</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="container">
-        <header id="header">
-            <h1 class="site-title">
-                <a href="index.html"><img src="img/logo.svg">
-                </a>
-            </h1>
-        </header>
+    <header id="header" class="wrapper">
+        <h1 class="site-title"><a href="index.html"><img src="./img/logo.svg" alt="profile"></a></h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#bicycle">Bicycle</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
-        <main>
-            <div id="mainvisaul">
-                <img src="./img/mainvisual.jpg" alt="">テキストテキスト
-            </div>
-
-            <section id="index">
-                <div class="inner">
-                    <h2 class="section-title">index</h2>
-                    <ol class="index-list">
-                        <li>aaaaaaaaaaaaa</li>
-                        <li>aaaaaaaaa</li>
-                        <li>aaaaaaaaa</li>
-                        <li>aaaaaaa</li>
-                        <li>aaaaaa</li>
-                    </ol>
+    <main>
+        <div id="mainvisaul">
+            <img src="./img/mainvisual.jpg" alt="テキストテキスト">
+        </div>
+        <section id="about" class="wrapper">
+            <h2 class="section-title">about</h2>
+            <div class="content">
+                <img src="./img/about.jpg" alt="テキスト">
+                <div class="text">
+                    <h3 class="content-title">廣岡　嶺大</h3>
+                    <p>aaaaaaaaaaaaaaaaaa<br>
+                        aaaaaaaaaaaaaaaaaaaa<br>
+                    </p>
                 </div>
-            </section>
+            </div>
+        </section>
 
-        </main>
+    </main>
     </div>
 
 </body>

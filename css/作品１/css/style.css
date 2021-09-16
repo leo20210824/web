@@ -1,27 +1,68 @@
 @charset "UTF-8";
+
 html {
     font-size: 100%;
 }
 body {
-    background-color: white;
-    color: black;
-    font-size: 0.875rem;
+    color: hsl(212, 10%, 25%);
+    font-size: 0.9rem;
+}
+a {
+    text-decoration: none;
 }
 img {
     max-width: 100%;
+li {
+    list-style: none;
 }
-/* サイト全体のコンテンツ幅 */
-.container {
-    max-width: 1000%;
+.site-title {
+    width: 120px;
+    line-height: 1px;
+    padding: 10px 0;
+}
+.site-title a {
+    display: block;
+}
+.section-title {
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 60px;
+    border-bottom: solid 1px #383e45;
+}
+.content-title {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto 100px auto;
+    padding: 0 4%;
+    text-align: center;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
 }
-/* 中のコンテンツの最大幅設定 */
-.inner {
-    max-width: 600rem;
+/* header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
-}
-.sectuon-title {
-    font-size: 1.125rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
+    }
+    #header ul {
+    display: flex;
+    padding: 10px 0;
+    }
+    #header li {
+    margin-left: 30px;
+    }
+    #header li a {
+    color: #24292e;
+    }
+    #header li a:hover {
+    opacity: 0.7;
+    }
