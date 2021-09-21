@@ -91,3 +91,50 @@ margin-bottom: 80px;
 #about .text {
     text-align: left;
     }
+    /* ２枚目 */
+    .
+ /*=== 画像の表示エリア ================================= */
+.slide {
+    position : relative;
+    overflow  : hidden;
+                      /* 画像のサイズに合わせて変更ください */
+    width : 500px;
+    height : 200px;
+    margin     : auto;      /* サンプルは中央寄せの背景：白 */
+    background : #fff;
+    }
+
+ /*=== 画像の設定 ======================================= */
+.slide img {
+    display    : block;
+    position   : absolute;
+                      /* 画像のサイズを表示エリアに合せる */
+    width      : inherit;
+    height     : inherit;
+    left       : -100%;
+    animation  : slideAnime 45s ease infinite;
+}
+
+ /*=== スライドのアニメーションを段差で開始する ========= */
+.slide img:nth-of-type(1) { animation-delay: 0s }
+.slide img:nth-of-type(2) { animation-delay: 9s }
+.slide img:nth-of-type(3) { animation-delay: 18s }
+
+ /*=== スライドのアニメーション ========================= */
+@keyframes slideAnime{
+    0% { left: -100% }
+    5% { left: 0     }
+    15% { left: 0     }
+    20% { left: 100%  }
+    100% { left: 100%  }
+}
+header.page-header {
+    background: no-repeat left/cover url(http://templatelite.com/uploads/2008/11/set7-header-original.jpg);
+    display: flex;
+    height: 350px;
+    min-width: auto;
+    align-items: center;
+    color: #fff;
+    text-shadow: #000 0 0 .2em;
+    margin-bottom: 100px;
+}
