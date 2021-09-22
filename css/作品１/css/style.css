@@ -10,12 +10,14 @@ body {
 a {
     text-decoration: none;
 }
+
 img {
     max-width: 100%;
 }
 li {
-    list-style: none;
+    list-style: square inside;
 }
+
 .site-title {
     width: 120px;
     line-height: 1px;
@@ -77,32 +79,49 @@ margin-bottom: 80px;
     object-fit: cover;
     }
 
-    #about .content {
+    #profile .content {
     display: flex;
     justify-content: center;
     align-items: center;
     }
-#about img {
+#profile img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin-right: 30px;
     }
-#about .text {
+#profile .text {
     text-align: left;
     }
     /* ２枚目 */
-    .
+
+    header.page-header {
+    background: no-repeat left/cover url(http://templatelite.com/uploads/2008/11/set7-header-original.jpg);
+    display: flex;
+    height: 350px;
+    min-width: auto;
+    align-items: center;
+    color: #fff;
+    text-shadow: #000 0 0 .2em;
+    margin-bottom: 100px;
+}
+#texit1 {
+color: cyan;
+font-size: 24px;
+font-family: serif;
+font-weight: bold;
+text-align: center;
+}
  /*=== 画像の表示エリア ================================= */
 .slide {
-    position : relative;
-    overflow  : hidden;
+    position   : relative;
+    overflow   : hidden;
                       /* 画像のサイズに合わせて変更ください */
-    width : 500px;
-    height : 200px;
+    width      : 500px;
+    height     : 200px;
     margin     : auto;      /* サンプルは中央寄せの背景：白 */
     background : #fff;
-    }
+}
 
  /*=== 画像の設定 ======================================= */
 .slide img {
@@ -112,7 +131,7 @@ margin-bottom: 80px;
     width      : inherit;
     height     : inherit;
     left       : -100%;
-    animation  : slideAnime 45s ease infinite;
+    animation  : slideAnime 45s linear infinite;
 }
 
  /*=== スライドのアニメーションを段差で開始する ========= */
@@ -128,13 +147,8 @@ margin-bottom: 80px;
     20% { left: 100%  }
     100% { left: 100%  }
 }
-header.page-header {
-    background: no-repeat left/cover url(http://templatelite.com/uploads/2008/11/set7-header-original.jpg);
-    display: flex;
-    height: 350px;
-    min-width: auto;
-    align-items: center;
-    color: #fff;
-    text-shadow: #000 0 0 .2em;
-    margin-bottom: 100px;
+
+.趣味{
+    font-weight: 100%;
+    text-align: center;
 }
