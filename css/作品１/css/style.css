@@ -5,8 +5,10 @@ html {
 }
 body {
     color: hsl(212, 10%, 25%);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
+
+
 a {
     text-decoration: none;
 }
@@ -17,7 +19,10 @@ img {
 li {
     list-style: square inside;
 }
-
+footer {
+    text-align: center;
+    background-color: gray;
+}
 .site-title {
     width: 120px;
     line-height: 1px;
@@ -34,7 +39,7 @@ li {
     border-bottom: solid 1px #383e45;
 }
 .content-title {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 10px 0;
 }
 .wrapper {
@@ -70,12 +75,12 @@ li {
     opacity: 0.7;
     }
 #mainvisual {
-margin-bottom: 80px;
+margin-bottom: 100px;
     }
 #mainvisual img {
     width: 100%;
     max-width: 1920px;
-    height: 600px;
+    height: 400px;
     object-fit: cover;
     }
 
@@ -107,7 +112,7 @@ margin-bottom: 80px;
 }
 #texit1 {
 color: cyan;
-font-size: 24px;
+font-size: 100px;
 font-family: serif;
 font-weight: bold;
 text-align: center;
@@ -118,9 +123,11 @@ text-align: center;
     overflow   : hidden;
                       /* 画像のサイズに合わせて変更ください */
     width      : 500px;
-    height     : 200px;
+    height     : 500px;
     margin     : auto;      /* サンプルは中央寄せの背景：白 */
     background : #fff;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
  /*=== 画像の設定 ======================================= */
