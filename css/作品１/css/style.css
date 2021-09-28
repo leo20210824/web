@@ -117,6 +117,40 @@ font-family: serif;
 font-weight: bold;
 text-align: center;
 }
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 600px) {
+
+    /*-------------------------------------------
+    Mainvisual
+    -------------------------------------------*/
+    #mainvisual img {
+    height: calc(100vh - 60px);
+    }
+
+    /*-------------------------------------------
+    profile
+    -------------------------------------------*/
+    #profile .content {
+    flex-direction: column;
+    }
+    #profile img {
+    margin-right: 0;
+    }
+
+    /*-------------------------------------------
+    趣味
+    -------------------------------------------*/
+    #趣味 ul {
+    flex-direction: column;
+    }
+    #趣味 li {
+    width: 100%;
+    margin-bottom: 30px;
+    }
+}
+
  /*=== 画像の表示エリア ================================= */
 .slide {
     position   : relative;
@@ -138,14 +172,22 @@ text-align: center;
     width      : inherit;
     height     : inherit;
     left       : -100%;
-    animation  : slideAnime 45s linear infinite;
+    animation  : slideAnime 120s 2s normal linear infinite;
 }
 
  /*=== スライドのアニメーションを段差で開始する ========= */
 .slide img:nth-of-type(1) { animation-delay: 0s }
-.slide img:nth-of-type(2) { animation-delay: 9s }
-.slide img:nth-of-type(3) { animation-delay: 18s }
-
+.slide img:nth-of-type(2) { animation-delay: 10s }
+.slide img:nth-of-type(3) { animation-delay: 20s }
+.slide img:nth-of-type(4) { animation-delay: 30s }
+.slide img:nth-of-type(5) { animation-delay: 40s }
+.slide img:nth-of-type(6) { animation-delay: 50s }
+.slide img:nth-of-type(7) { animation-delay: 60s }
+.slide img:nth-of-type(8) { animation-delay: 70s }
+.slide img:nth-of-type(9) { animation-delay: 80s }
+.slide img:nth-of-type(10) { animation-delay: 90s }
+.slide img:nth-of-type(11) { animation-delay: 100s }
+.slide img:nth-of-type(12) { animation-delay: 110s }
  /*=== スライドのアニメーション ========================= */
 @keyframes slideAnime{
     0% { left: -100% }
